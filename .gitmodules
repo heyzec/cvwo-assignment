@@ -1,0 +1,6 @@
+[submodule "Mid-Submission/cvwo-frontend"]
+	path = Mid-Submission/cvwo-frontend
+	url = ../cvwo-frontend
+[submodule "Mid-Submission/cvwo-backend"]
+	path = Mid-Submission/cvwo-backend
+	url = ../cvwo-backend
