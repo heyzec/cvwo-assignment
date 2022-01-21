@@ -1,3 +1,22 @@
+## 16 Jan 2022
+I realised that writing CSS can be easier if I were to work outside-in. There were a few instances where I wanted to make some layout changes to an existing component, but even after some time experimenting I just couldn't get it the way I wanted. Eventually, I decided to in a sense start from scratch, copying chunks of code back step-by-step and making minor CSS tweaks along the way until it reached the state I wanted. This made sense because generally, the properties of parent elements will affect the layout of their children, and less of the other way around.
+
+React does not make the DOM change; it compares the diffs, and modifies and replaces wherever necessary. Some CSS properties, such as 'animation' and 'transition', requires the element to be directly modified and not be swapped out and replaced with a new instance. Using components that are themselves defined inside another component will confuse React, leading to weird behaviour such as the entire element being swapped out, which then breaks CSS. Hence, it is best to define each component separately.
+
+
+## 9 Jan 2022
+At this point, the changes I were making to my code had effects that are so intertwined that it no longer made sense to commit to separate branches. Hence, I created a new 'develop' branch to work on these changes on, merging back with 'main' on every deployment.
+
+The UI design of my app felt very inconsistent, and I had to spend a lot of time to tweak every small part such as every input field, and every button. I read up about CSS frameworks such as Bootstrap and the [mui](https://mui.com/getting-started/installation/) react library, and realised that it was what I needed to make my app more visually consistent.
+
+I experimented with the mui library (see [test-material-ui](https://github.com/heyzec/cvwo-frontend/tree/test-material-ui)) to get a better understanding of the options it offers. Afterwards, I decided to create my own "framework" with material-inspired components for a more in-depth understanding of the underlying CSS.
+
+
+## 4 Jan 2022
+While researching on how to design the sign-in page, I came upon the concept of ["frictionless forms"](https://instapage.com/blog/sign-up-page). It is the idea of reducing the number of fields to ask the user during the sign-up process. I could relate to the few occasions whereby I encountered a sign-up page with many fields, and I would be feel lazy and also reluctant to give out so much information. The takeaway for an app developer is to remove as many unnecessary details required, and consider delaying getting non-essential info, instead allowing users to fill up in their own accord after they have created an account.
+
+On Devise's GitHub page, it was recommended that beginners of Rails to not use Devise. ([see here](https://github.com/heartcombo/devise#starting-with-rails)). So, I followed tutorials online to do basic authentication from scratch.
+
 ## 27 Dec 2021
 I've heard of the term _relational database_ but never actually understood what that meant. Today I learnt that this refers to relations between tables, such as one to many, one to one, many to many relationships, and they are represented by entity relationship diagrams.
 
