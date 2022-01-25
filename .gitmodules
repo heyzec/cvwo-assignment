@@ -4,3 +4,9 @@
 [submodule "Mid-Submission/cvwo-backend"]
 	path = Mid-Submission/cvwo-backend
 	url = ../cvwo-backend
+[submodule "Final-Submission/cvwo-frontend"]
+	path = Final-Submission/cvwo-frontend
+	url = ../cvwo-frontend
+[submodule "Final-Submission/cvwo-backend"]
+	path = Final-Submission/cvwo-backend
+	url = ../cvwo-backend
